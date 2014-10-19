@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ISS</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <!-- Latest foundation compiled CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.6/css/foundation.css">
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="row">
+    <!-- Padding -->
+    <div class="large-3 columns"></div>
+
+    <!-- Main Content -->
+    <div class="large-6 columns">
+      <%= yield %>
+    </div>
+
+    <!-- Padding -->
+    <div class="large-3 columns"></div>
+  </div>
+
+
+
+</body>
+</html>
