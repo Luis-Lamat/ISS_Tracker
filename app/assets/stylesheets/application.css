@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-image: url('natural_paper_@2X.png') !important;
+}
+
+#center_div {
+  height: 100%;
+}

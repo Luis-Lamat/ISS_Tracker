@@ -11,17 +11,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="row">
-    <!-- Padding -->
-    <div class="large-3 columns"></div>
+  <%= render 'layouts/nav'  %>
+
+  <div class="row" id="center_div">
+
 
     <!-- Main Content -->
-    <div class="large-6 columns">
+    <div class="large-12 columns">
       <%= yield %>
     </div>
 
-    <!-- Padding -->
-    <div class="large-3 columns"></div>
+
   </div>
 
 
