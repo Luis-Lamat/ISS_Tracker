@@ -1,9 +1,16 @@
 <div style="text-align:center">
-  <hr>
+  <br>
+  <div id="iss_image_round"></div>
   <h1><b>ISS Location</b></h1>
   <h2>Latitude: <%= @lat %></h2>
   <h2>Longitude: <%= @lon %></h2>
+  <br>
+  <h2><b>Address:</b></h2>
+  <% if @data %>
+    <h3><a href="http://maps.google.com/?ie=UTF8&hq=&ll=<%= @lat %>,<%= @lon %>&z=6"><%= @data %></a></h3>
+  <% else %>
+    <h3><small>No known land address for the current ISS position.</small></h3>
+  <% end %>
   <hr>
-  
-  <a href="<%= root_path %>" class="button [secondary success alert]">Refresh Position</a>
+  <%= link_to 'Refresh Position', root_path, class: 'button [secondary success alert]' %>
 </div>
