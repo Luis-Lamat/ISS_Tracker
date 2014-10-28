@@ -29,7 +29,10 @@
       var myOptions = {
         zoom: 2,
         center: new google.maps.LatLng(<%= @lat %>,<%= @lon %>),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        draggable: false,
+        scrollwheel: false,
+        scaleControl: false
       };
       map    = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
       marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(<%= @lat %>,<%= @lon %>)});
