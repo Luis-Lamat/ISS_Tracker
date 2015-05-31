@@ -2,8 +2,8 @@
   <br>
   <div id="iss_image_round"></div>
   <h1><b>ISS Location</b></h1>
-  <h4>Latitude: <%= @lat %></h4>
-  <h4>Longitude: <%= @lon %></h4>
+  <h4 id="lat">Latitude: <%= @lat %></h4>
+  <h4 id="lon">Longitude: <%= @lon %></h4>
   <h2><b>Address:</b></h2>
 
   <% if @data %>
@@ -48,5 +48,5 @@
   </script>
 
   <hr>
-  <%= link_to 'Refresh Position', root_path, class: 'button [secondary success alert]' %>
+  <button class="button [secondary success alert]" id="iss-btn">Refresh Position</button>
 </div>
